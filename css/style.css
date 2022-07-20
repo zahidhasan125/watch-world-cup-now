@@ -9,6 +9,7 @@ body {
 }
 
 .container {
+    /* width: 100%; */
     padding: 140px;
     padding-top: 50px;
 }
@@ -18,25 +19,35 @@ body {
     display: flex;
     column-gap: 24px;
     background-color: #161616;
-    padding-right: 80px;
+    /* padding-right: 80px; */
     border-radius: 30px;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .header-info {
-    width: 530px;
-    height: 420px;
-    padding-bottom: 100px;
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* padding-bottom: 100px; */
     color: #FFFFFF;
     transform: scale(.8);
 }
+.header-info *{
+    text-align: center;
+}
 
 h1 {
-    font-size: 70px;
+    font-size: 3rem;
     font-weight: 700;
     margin-bottom: 4px;
-    line-height: 80px;
+    line-height: 1.1em;
+    text-align: center;
 }
 
 .header-info p {
@@ -44,12 +55,12 @@ h1 {
     padding-bottom: 30px;
 }
 
+.header-img{
+    width: 50%;
+}
 .header-img img {
-    height: 100%;
-    width: auto;
-    position: relative;
-    bottom: -8px;
-    transform: scale(1.5);
+    /* height: 100%; */
+    width: 100%;
 }
 
 .active-btn {
@@ -168,3 +179,73 @@ h1 {
     text-decoration: none;
     color: #B9B9B9;
 }
+
+
+/* Media Queries */
+
+/* mobile device */
+
+@media only screen and (max-width:688px) {
+
+    .container{
+        padding:20px;
+    }
+    .header{
+        flex-direction: column;
+
+        /* align-items: baseline; */
+    }
+    .header-info h1{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space:inherit
+        /* font-size: 1.5em; */
+    }
+    .blogs-part{
+        display: flex;
+        flex-direction: column;
+    }
+    .blog-nav{
+        /* flex-direction: row; */
+        background-color: #FFFFFF;
+        border: 1px solid #E8E8E8;
+        
+    }
+    .blog-nav *{
+        border: 1px solid #E8E8E8;
+    }
+    .footer{
+                 display: none;
+             }
+ }
+}
+
+/* For tab */
+ @media only screen and (min-width: 688px) and (max-width: 992px) {
+
+
+    /* .body, html{
+        width: 100%;
+        margin: 0;
+    }          */
+    
+    .container{
+                 width: 100%;
+                 margin: 50px;
+                 margin-top: 20px;
+                 padding: 0;
+             }
+
+             .header{
+                 width: 100%;
+             }
+             h1{
+                 font-size: 3.2em;
+             }
+             .header-img img{
+                 
+             }
+             .blogs-part, footer{
+                 /* display: none; */
+             }
+ }
