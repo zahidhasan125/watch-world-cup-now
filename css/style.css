@@ -9,7 +9,6 @@ body {
 }
 
 .container {
-    /* width: 100%; */
     padding: 140px;
     padding-top: 50px;
 }
@@ -33,7 +32,6 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    /* padding-bottom: 100px; */
     color: #FFFFFF;
     transform: scale(.8);
 }
@@ -183,7 +181,6 @@ h1 {
 }
 
 .footer-nav {
-    /* width: 800px; */
     display: flex;
     justify-content: space-between;
 }
@@ -257,20 +254,12 @@ h1 {
     
     footer{
         width: 100%;
-        /* margin: 0; */
-        /* padding: 2px; */
     }
 
     .footer-nav{
         flex-direction: column;
         align-items: center;
     }
-
-
-    /* .footer {
-        display: none;
-    } */
-    
 
 }
 
