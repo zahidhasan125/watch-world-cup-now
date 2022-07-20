@@ -25,7 +25,6 @@ body {
 
 .header-info {
     width: 100%;
-    /* height: 80%; */
     display: flex;
     overflow: hidden;
     flex-direction: column;
@@ -33,10 +32,6 @@ body {
     align-items: flex-start;
     color: #FFFFFF;
     transform: scale(.8);
-}
-
-.header-info * {
-    /* text-align: center; */
 }
 
 h1 {
@@ -50,10 +45,6 @@ h1 {
 .header-info p {
     font-size: 16px;
     padding-bottom: 30px;
-}
-
-.header-img {
-    /* width: 50%; */
 }
 
 .header-img img {
@@ -75,7 +66,7 @@ h1 {
     transition: background-color .5s ease-in;
 }
 
-/* Blogs Section */
+/* Blogs and Match Section */
 
 .blogs-part,
 .matches-part {
@@ -170,7 +161,7 @@ h1 {
     margin-right: 10px;
 }
 
-/* View all section */
+/* View All Blogs Button */
 
 .view-all {
     display: flex;
@@ -248,9 +239,11 @@ h1 {
 }
 
 
-/* Media Queries */
+/*-------------------------------------
+            Media Queries
+---------------------------------------*/
 
-/* mobile device */
+/* Query for Mobile Device */
 
 @media only screen and (max-width:688px) {
 
@@ -321,7 +314,7 @@ h1 {
 }
 
 
-/* For tab */
+/* For tablet devices */
 @media only screen and (min-width: 688px) and (max-width: 992px) {
 
 
@@ -381,8 +374,6 @@ h1 {
     }
 
     .footer-section {
-        /* position: sticky;
-        bottom: 0; */
         width: 100%;
 
     }
@@ -395,6 +386,7 @@ h1 {
     }
 }
 
+/* Query for desktop devices */
 @media only screen and (min-width: 993px) {
     .view-all {
         display: none;
