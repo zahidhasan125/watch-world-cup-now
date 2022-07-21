@@ -295,10 +295,16 @@ h1 {
     
     .header-info {
         padding: 3em;
-        padding-bottom: 0;
         justify-content: space-around;
         align-items: center;
-        text-align: center;;
+        text-align: center;
+        overflow: hidden;
+    }
+    .header-info p{
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .header-info a {
@@ -366,6 +372,16 @@ h1 {
         text-align: left;
     }
 
+    .header-info {
+        overflow: hidden;
+    }
+
+    .header-info p{
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
     .header {
         width: 100%;
     }
