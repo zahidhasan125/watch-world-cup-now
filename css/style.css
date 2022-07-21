@@ -19,8 +19,7 @@ body {
     background-color: #161616;
     border-radius: 30px;
     align-items: center;
-    padding: 1em;
-    padding-left: 5em;
+    /* padding-left: 5em; */
     
 }
 
@@ -32,6 +31,8 @@ body {
     justify-content: space-around;
     align-items: flex-start;
     color: #FFFFFF;
+    padding: 1em;
+    padding-left: 5em;
 }
 
 h1 {
@@ -290,11 +291,11 @@ h1 {
     .header {
         display: flex;
         flex-direction: column;
+    }
+    
+    .header-info {
         padding: 3em;
         padding-bottom: 0;
-    }
-
-    .header-info {
         justify-content: space-around;
         align-items: center;
         text-align: center;;
